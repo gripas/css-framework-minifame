@@ -1,1 +1,260 @@
+/* Miniframe style Lic GNU
+* Author web site http://www.manowebas.lt
+*/
+@import url('https://fonts.googleapis.com/css?family=Gilda+Display');
+@import url('https://fonts.googleapis.com/css?family=Comfortaa');
+div {
+	border: 1px dashed #888;
+	margin: -0.099999rem;
+}
+html, body {
+    font-family:  Volkhov, serif;
+	padding: 0;
+	margin: 0;
+}
+body { width: 100%; height: 100%;}
 
+h1.title {
+	font-family: Comfortaa, cursive;
+	font-weight: 100;
+	letter-spacing: 0.1rem;
+    word-spacing: -0.2rem;
+	line-height:100%;
+}
+
+/* Karkaso šablonai */
+.container {
+  width: 100%;
+  padding-right: calc(var(--bs-gutter-x) * .5);
+  padding-left: calc(var(--bs-gutter-x) * .5);
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.row > * {
+  flex-shrink: 0;
+  width: 100%;
+  max-width: 100%;
+  padding-right: calc(var(--bs-gutter-x) * .0);
+  padding-left: calc(var(--bs-gutter-x) * .0);
+  margin-top: var(--bs-gutter-y);
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(-1 * var(--bs-gutter-y));
+  margin-right: calc(-.5 * var(--bs-gutter-x));
+  margin-left: calc(-.5 * var(--bs-gutter-x));
+}
+.col {
+  flex: 1 0 0%;
+}
+
+.in-line{ 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.center { text-align: center;}
+
+
+/* Iki mobilaus tel. naršyklių rezoliucija prisitaiko procentaliai*/
+@media (min-width:1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+@media (min-width:768px) {
+  .col-md-1 {
+    flex: 0 0 auto;
+    width: 8.459%;
+  }
+}
+@media (min-width:768px) {
+  .col-md-2 {
+    flex: 0 0 auto;
+    width: 16.94%;
+  }
+}
+
+@media (min-width:768px) {
+  .col-md-3 {
+    flex: 0 0 auto;
+    width: 25.025%;
+  }
+}
+
+@media (min-width:768px) {
+  .col-md-4 {
+    flex: 0 0 auto;
+    width: 33.45%;
+  }
+}
+
+@media (min-width:768px) {
+  .col-md-6 {
+    flex: 0 0 auto;
+    width: 50.069%;
+  }
+}
+
+@media (min-width:768px) {
+  .col-md-8 {
+    flex: 0 0 auto;
+    width: 66.5%;
+  }
+}
+@media (min-width:768px) {
+  .col-md-9 {
+    flex: 0 0 auto;
+    width: 75%;
+  }
+}
+@media (min-width:768px) {
+  .col-md-12 {
+    flex: 0 0 auto;
+    width: 99.99%;
+  }
+}
+
+@media (min-width:768px) {
+  .navbar-expand-md {
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+  }
+}
+@media (min-width:768px) {
+  .navbar-expand-md .navbar-nav {
+    flex-direction: row;
+  }
+}
+/* Šriftai, antraščių ir paragrafo dydžiai*/
+h1 {font-size: 2.1rem;}
+h2 {font-size: 1.8rem;}
+h3 {font-size: 1.6rem;}
+h4 {font-size: 1.3rem;}
+h5 {font-size: 1.2rem;}
+p {font-size: 1.05rem;}
+
+/* Spalvos numatytosios*/
+/* Text colors*/
+.txt-blue {color: #0D51F8;}
+.txt-blue-light {color: #77CCEE ;}
+.txt-blue-heavan {color: #58F7FC ;}
+.txt-yellow {color: #F1E118;}
+.txt-yellow-light {color: #FCF280;}
+.txt-orange {color: #FC9E27;}
+.txt-brown {color: #A5804F;}
+.txt-red {color: #F74A2E;}
+.txt-danger {color: #E82C51;}
+.txt-purple {color: #C32EF7;}
+.txt-purple-light {color: #FDABF4;}
+.txt-silver {color: #EEEEEE;}
+.txt-gold {color: #C7CA15;}
+.txt-bronze {color: #DF9F02;}
+.txt-black {color: #000000;}
+.txt-white {color: #FFFFFF;}
+.txt-dark {color: #3B3A3A;}
+.txt-green {color: #64DE49;}
+.txt-salad {color: #ADE56A;}
+.txt-menthol {color: #95FFC9;}
+
+/*Spalvos background-color*/
+.bg-blue {background-color: #0D51F8;}
+.bg-blue-light {background-color: #77CCEE ;}
+.bg-blue-heavan {background-color: #58F7FC ;}
+.bg-yellow {background-color: #F1E118;}
+.bg-yellow-light {background-color: #FCF280;}
+.bg-orange {background-color: #FC9E27;}
+.bg-brown {background-color: #A5804F;}
+.bg-red {background-color: #F74A2E;}
+.bg-danger {background-color: #E82C51;}
+.bg-purple {background-color: #C32EF7;}
+.bg-purple-light {background-color: #FDABF4;}
+.bg-silver {background-color: #EEEEEE;}
+.bg-gold {background-color: #C7CA15;}
+.bg-bronze {background-color: #DF9F02;}
+.bg-black {background-color: #000000;}
+.bg-white {background-color: #FFFFFF;}
+.bg-dark {background-color: #3B3A3A;}
+.bg-green {background-color: #64DE49;}
+.bg-salad {background-color: #ADE56A;}
+.bg-menthol {background-color: #95FFC9;}
+/*Spalvų pabaiga*/
+
+nav { background: transparent;}
+
+nav.navbar.navbar-expand-md {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.navbar-items {
+  display: flex;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+.nav-link {
+  display: block;
+  text-decoration: none;
+  padding: 5px 11px 6px 11px;
+ }
+.nav-link:focus { 
+  display: block;
+  border-radius:5px;
+  border: 1px solid #B67C00;
+  margin: -1px;
+}
+.nav-link:active{
+  color: #333;
+}
+.nav-link:focus{
+  color: #333;
+}
+
+.nav-item  {
+	padding-bottom: 2px;
+}
+.nav-item a {
+  font-weight: 100;
+  letter-spacing: 0.05rem;
+  word-spacing: -0.1rem;
+  font-size:1.3rem;
+  font-weight: lighter;
+}
+
+/*input text, submit, password, textarea, placeholder ir button*/
+
+::placeholder {
+  color: #838383;
+  opacity: 1; /* Firefox */
+}
+
+
+/*Ženkleliai*/
+
+.badge{
+	display:inline-block;
+	padding:.25em .4em;
+	font-size:75%;
+	font-weight:700;
+	line-height:1;
+	text-align:center;
+	white-space:nowrap;
+	vertical-align:baseline;
+	border-radius:.25rem;
+}
+	
+/*ženklelis apelsino spalva*/	
+.badge-orange {
+	color:#fff;
+	background-color:#F88410;
+}
+span.badge-orange:focus, span.badge-orange:hover{
+	color:#000;
+	text-decoration:none;
+	background-color:#FFA448;
+}
