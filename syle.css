@@ -1,6 +1,3 @@
-/* Miniframe style Lic GNU
-* Author name Darius Jakaitis, author web site http://www.manowebas.lt
-*/
 @import url('https://fonts.googleapis.com/css?family=Gilda+Display');
 @import url('https://fonts.googleapis.com/css?family=Comfortaa');
 
@@ -28,6 +25,10 @@ h1.title {
 }
 
 /* Karkaso šablonai */
+
+.wrapper {
+  display: flex;
+}
 
 .container {
   width: 100%;
@@ -59,13 +60,18 @@ h1.title {
   flex-direction: column !important;
 }
 
+.d-flex {
+  display: flex !important;
+}
+
+
 .in-line{ 
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
 .center { text-align: center;}
+
 
 *, *::before, *::after {
   box-sizing: border-box;
@@ -132,11 +138,11 @@ h1.title {
     width: 99.99%;
   }
 
-  .navbar-exp-md {
+  .navbar-expand-md {
     flex-wrap: nowrap;
     justify-content: flex-start;
   }
-  .navbar-exp-md .navbar-nav {
+  .navbar-expand-md .navbar-nav {
     flex-direction: row;
   }
 }
@@ -285,4 +291,3 @@ span.badge-orange:focus, span.badge-orange:hover{
 	text-decoration:none;
 	background-color:#FFA448;
 }
-
