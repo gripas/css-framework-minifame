@@ -1,11 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Gilda+Display');
 @import url('https://fonts.googleapis.com/css?family=Comfortaa');
 
-2div {
-	border: 0.0001rem dashed #888; /* < -- Pakeiskite 2div į div kad pasinaikintų punktyrinės
-	                           linijos aplink jūsų konteinerius*/
-	/*margin: -0.0099999rem;*/
-}
 html, body {
     font-family:  Volkhov, serif;
 	padding: 0;
