@@ -1,6 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Gilda+Display');
 @import url('https://fonts.googleapis.com/css?family=Comfortaa');
 
+2div {
+	border: 0.0001rem dashed #888; /* < -- Pakeiskite 2div į div kad pasinaikintų punktyrinės
+	                           linijos aplink jūsų konteinerius*/
+	/*margin: -0.0099999rem;*/
+}
 html, body {
     font-family:  Volkhov, serif;
 	padding: 0;
@@ -62,10 +67,13 @@ h1.title {
 
 .in-line{ 
   display: flex;
+
+}
+.center { 
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
-.center { text-align: center;}
 
 
 *, *::before, *::after {
@@ -171,6 +179,7 @@ p {font-size: 1.05rem;}
 .txt-green {color: #64DE49;}
 .txt-salad {color: #ADE56A;}
 .txt-menthol {color: #95FFC9;}
+.txt-dark-rubber {color: #373C49;}
 
 /*Spalvos background-color*/
 .bg-blue {background-color: #0D51F8;}
@@ -193,6 +202,7 @@ p {font-size: 1.05rem;}
 .bg-green {background-color: #64DE49;}
 .bg-salad {background-color: #ADE56A;}
 .bg-menthol {background-color: #95FFC9;}
+.bg-dark-rubber {background-color: #373C49;}
 /*Spalvų pabaiga*/
 /* navbar*/
 nav { background: transparent;}
