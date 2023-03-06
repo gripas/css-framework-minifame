@@ -1,11 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Gilda+Display');
 @import url('https://fonts.googleapis.com/css?family=Comfortaa');
 
-2div {
-	border: 0.0001rem dashed #888; /* < -- Pakeiskite 2div į div kad pasinaikintų punktyrinės
-	                           linijos aplink jūsų konteinerius*/
-	/*margin: -0.0099999rem;*/
-}
+/*
+*  MiniFrame css karkasas Lic GNU
+*  Author Name Darius Jakaitis, author web site http://www.manowebas.lt
+*/
 html, body {
     font-family:  Volkhov, serif;
 	padding: 0;
@@ -31,7 +30,7 @@ h1.title {
 }
 
 .container {
-  width: 100%;
+  max-width: 100%;
   padding: -1px;
   margin-right: auto;
   margin-left: auto;
@@ -60,13 +59,8 @@ h1.title {
   flex-direction: column !important;
 }
 
-.d-flex {
+.line-flex{ 
   display: flex !important;
-}
-
-
-.in-line{ 
-  display: flex;
 
 }
 .center { 
@@ -75,19 +69,72 @@ h1.title {
   text-align: center;
 }
 
-
 *, *::before, *::after {
   box-sizing: border-box;
 }
+/* navbar*/
+nav { background: transparent;}
 
+.navbar-expand-md  {
+
+}
+.navbar{
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;  
+ 
+}
+.navbar-items { 
+  margin: 0 auto;
+  display: inline-blok;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;   
+  width:98.5%;
+}
+
+.nav-item  {
+	padding-bottom: 2px;
+    margin-left: -0.5px;
+	margin-right: -1.5px;
+  
+}
+.nav-item a {
+  font-weight: 100;
+  letter-spacing: 0.05rem;
+  word-spacing: -0.1rem;
+  font-size:1.3rem;
+  font-weight: lighter;
+
+}
+.nav-link {
+  display: flex;
+  text-decoration: none;
+  padding: 2px 11px 6px 11px;
+  background-color: white;
+  border-radius:2px;
+  border: 0px solid #B67C00;
+ }
+ 
+.nav-link:focus { 
+  display: block;
+  margin: -1px;
+  border-radius:2px;
+  border: 1px solid #B67C00;
+   
+  color: #333;
+}
+.nav-link:active{
+  color: #333;
+}
 
 
 /* Iki mobilaus tel. naršyklių rezoliucija prisitaiko procentaliai*/
 
-
 @media (min-width:320px) {
   .container {
-    max-width: auto;
 	margin: -0.08rem;
   }
 }
@@ -97,11 +144,37 @@ h1.title {
   }
   
   .container {
-    max-width: auto;
 	margin: -0.08rem;
+  }
+  .navbar-items { 
+    display: flex;
+    width:auto;
+	
+  }
+  .nav-item a {
+    position: realitive;
+	float:left;
+    margin: 0 10px;
+	
+  }
+  .nav-link:focus { 
+  display: block;
+    margin: -1px 9px;
+  border-radius:2px;
+  border: 1px solid #B67C00;
+   
+  color: #333;
+}
+  .nav-link {
+    display: flex;
+    text-decoration: none;
+    padding: 5px 11px 6px 11px;
+	 background-color: transparent;
+	 
   }
 
   .col-md-1 {
+	  
     flex: 0 0 auto;
     width: 8.33%;
   }
@@ -144,9 +217,11 @@ h1.title {
   .navbar-expand-md {
     flex-wrap: nowrap;
     justify-content: flex-start;
+	
   }
-  .navbar-expand-md .navbar-nav {
-    flex-direction: row;
+  .navbar-expand-md {
+    flex-direction: row; 
+	
   }
 }
 /* Šriftai, antraščių ir paragrafo dydžiai*/
@@ -156,6 +231,8 @@ h3 {font-size: 1.6rem;}
 h4 {font-size: 1.3rem;}
 h5 {font-size: 1.2rem;}
 p {font-size: 1.05rem;}
+ul .nav-item a {color: #A5804F; }
+ul .nav-item a:hover {color: #64DE49; }
 
 /* Spalvos numatytosios*/
 /* Text colors*/
@@ -204,63 +281,6 @@ p {font-size: 1.05rem;}
 .bg-menthol {background-color: #95FFC9;}
 .bg-dark-rubber {background-color: #373C49;}
 /*Spalvų pabaiga*/
-/* navbar*/
-nav { background: transparent;}
-
-.navbar {
-  position: relative;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-
-}
-nav.navbar.navbar-expand-md {
-  position: relative;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-}
-.navbar-items { 
-  margin: 0 auto;
-  display: flex;
-  padding-left: 0;
-  margin-bottom: 0;
-  list-style: none;
-}
-.nav-link {
-  display: block;
-  text-decoration: none;
-  padding: 5px 11px 6px 11px;
-    	
- }
- 
-.nav-link:focus { 
-  display: block;
-  border-radius:5px;
-  border: 1px solid #B67C00;
-  margin: -1px;
-}
-.nav-link:active{
-  color: #333;
-}
-.nav-link:focus{
-  color: #333;
-}
-
-.nav-item  {
-	padding-bottom: 2px;
-    margin-left: -0.5px;
-	margin-right: -1.5px;
-}
-.nav-item a {
-  font-weight: 100;
-  letter-spacing: 0.05rem;
-  word-spacing: -0.1rem;
-  font-size:1.3rem;
-  font-weight: lighter;
-  
-}
 
 
 
