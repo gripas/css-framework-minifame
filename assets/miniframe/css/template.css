@@ -1,5 +1,5 @@
 /*
-*  @MiniFrame css karkasas Lic GNU
+*  MiniFrame css karkasas Lic GNU
 *  Author Name Darius Jakaitis, author web site http://www.manowebas.lt
 */
 @import url('../fonts/gilda-display.css'); /*https://fonts.googleapis.com/css?family=Gilda+Display*/
@@ -26,6 +26,7 @@
 	--txt-cols-width: 50%;	
 	--nav-item-a-link-color: #B6B6B6;
 	--nav-item-hover-link-color: #CECF75;
+	--text-UPERCASE: uppercase;
 }
 
 
@@ -510,9 +511,8 @@ span.badge-orange:focus, span.badge-orange:hover{
 .navbar {
   display: flex;
   position: realitive;
-  padding: 16px;
+  padding: 18px;
   font-family: sans-serif;
- 
   
 }
 .nav-menu {
@@ -520,7 +520,7 @@ span.badge-orange:focus, span.badge-orange:hover{
 }
 .nav-items {
   display: flex;
-
+  text-transform: var(--text-UPERCASE);
 }
 
 .nav-item a {color: var(--nav-item-a-link-color); } /* color: #A5804F;*/
@@ -538,6 +538,10 @@ span.badge-orange:focus, span.badge-orange:hover{
   ul.nav-menu-align {
 	  margin: auto  0px  auto auto;
   }
+  li.nav-item {
+	list-style: none;
+    margin-right: 1rem;
+  }
 /* išslenkančio menu navigacijos baro pabaiga*/
 
 /*Meniu baro navigacijos prisitaikymo prie įstrižainės nustatymai*/
@@ -546,10 +550,11 @@ span.badge-orange:focus, span.badge-orange:hover{
   .navbar {
     flex-direction: column;
 	margin: auto auto auto 0px !important;
+	
   }
     
 .nav-items {
-    display:none;
+    display:none;	
 	
   }
   ul.nav-menu-align {
@@ -582,7 +587,23 @@ span.badge-orange:focus, span.badge-orange:hover{
   .nav-link {
      display: flex;
      text-decoration: none;
-     padding: 5px 11px 6px 11px;
+     padding: 7px 11px 7px 0px;
 	 background-color: transparent;
+
   }   
+  .nav-item .nav-link {
+	list-style: none;
+    padding-right: 3px;
+  }   
+  li.nav-item  {
+	list-style: none;
+	padding: 7px 16px 7px 0px;
+	
+  }   
+
+   li.nav-item .nav-link{
+    margin: -0.2rem 0rem -1rem -1rem;
+	display: block;
+
+  }
 }
