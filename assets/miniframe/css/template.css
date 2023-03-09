@@ -28,8 +28,15 @@
 	--nav-item-hover-link-color: #CECF75;
 	--text-UPERCASE: uppercase;
 }
-
-
+/*teksto šrifto klasės pradžia */
+h1.font-verdana,h2.font-verdana,h3.font-verdana,h4.font-verdana,h5.font-verdana,p.font-verdana,a.font-verdana{ font-family: Verdana, sans-serif !important;}
+h1.font-gill-sans,h2.font-gill-sans,h3.font-gill-sans,h4 .font-gill-sans,h5.font-gill-sans,p.font-gill-sans,a.font-gill-sans{font-family: "Gill Sans", sans-serif !important;}
+h1.font-geneva,h2.font-geneva,h3.font-geneva,h4.font-geneva,h5.font-geneva,p.font-geneva,a.font-geneva{font-family: Geneva !important;}
+h1.font-segoe-ui,h2.font-segoe-ui,h3.font-segoe-ui,h4.font-segoe-ui,h5.font-segoe-ui,p.font-segoe-ui,a.font-segoe-ui{font-family: "Segoe UI" !important;}
+h1.font-optima,h2.font-optima,h3.font-optima,h4.font-optima,h5.font-optima,p.font-optima,a.font-optima{font-family: Optima !important;}
+h1.font-gothic,h2.font-gothic,h3.font-gothic,h4.font-gothic,h5.font-gothic, p.font-gothic,a.font-gothic{font-family: "Century Gothic", CenturyGothic !important;}
+h1.font-papyrus,h2.font-papyrus,h3.font-papyrus,h4.font-papyrus,h5.font-papyrus,p.font-papyrus,a.font-papyrus{font-family: Papyrus, fantasy !important;}
+/*teksto šrifto klasės pabaiga*/
 2div {
 	border: 0.0001rem dashed #888; /* < -- Pakeiskite 2div į div kad pasinaikintų punktyrinės
 	                                        linijos aplink jūsų konteinerius*/
@@ -38,7 +45,7 @@
 	šiek tiek turi įtakos kai aktyvuojamas border nustatymas
 	*/
 }
-
+.border-1 { border: 0.02rem solid #393D47; padding: -0.02rem; margin: -0.02rem;}
 html, body {
     font-family:  Volkhov, serif;
 	padding: 0;
@@ -408,7 +415,7 @@ span.badge-orange:focus, span.badge-orange:hover{
 
   .col-sm-2 {
     flex: 0 0 auto;
-    min-width: 33.36%;
+    min-width: 33.34%;
     max-width: 66.64%;
   }
 }
@@ -422,7 +429,7 @@ span.badge-orange:focus, span.badge-orange:hover{
 
   .col-sm-2 {
     flex: 0 0 auto;
-    width: 100%;
+    width: 99.99%;
 
   }
       img.img-300{
@@ -439,6 +446,10 @@ span.badge-orange:focus, span.badge-orange:hover{
     img.img-300{
 		width: 98%;
 		
+	}
+	.col-sm-2 {
+	  flex: 0 0 auto;
+	  width: 50%;
 	}
 	.col-sm-3 {
 	  flex: 0 0 auto;
@@ -495,7 +506,7 @@ span.badge-orange:focus, span.badge-orange:hover{
 
   .col-md-2 {
     flex: 0 0 auto;
-    width: 16.66%;
+    width: 16.65%;
   }
 
   .col-md-3 {
