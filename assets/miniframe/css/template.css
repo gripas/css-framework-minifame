@@ -1,6 +1,6 @@
 /*
 *  MiniFrame css karkasas Lic GNU
-*  Author Name Darius Jakaitis, author web site http://www.manowebas.lt
+*  Author Name Darius Jakaitis, author web site 
 */
 @import url('../fonts/gilda-display.css'); /*https://fonts.googleapis.com/css?family=Gilda+Display*/
 @import url('../fonts/comfortaa.css'); /*https://fonts.googleapis.com/css?family=Comfortaa*/
@@ -202,6 +202,46 @@ header, section, footer {
   margin: auto 0px auto auto;
 
 }
+/*Paveikslėlių stilius */
+
+ img.img-75{ /* Paveikslėlio dydis 75px */
+  border: 0.3rem solid #49F5F2;
+  border-radius: 3px;
+  padding: 3px;
+  width: 75px;
+  min-height: 75px;
+}
+
+ img.img-75:hover {
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
+ img.img-150{ /* Paveikslėlio dydis 150px */
+  border: 0.3rem solid #49F5F2;
+  border-radius: 3px;
+  padding: 3px;
+  width: 150px;
+  min-height: 150px;
+}
+
+ img.img-150:hover {
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
+ img.img-300{ /* Paveikslėlio dydis 300px */
+  border: 0.3rem solid #49F5F2;
+  border-radius: 3px;
+  padding: 3px;
+  width: 300px;
+  min-height: 300px;
+}
+
+ img.img-300:hover {
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
+/*Paveikslėlio stiliaus pabaiga*/
+
 *, *::before, *::after {
   box-sizing: border-box;
 }
@@ -385,6 +425,10 @@ span.badge-orange:focus, span.badge-orange:hover{
     width: 100%;
 
   }
+      img.img-300{
+		width: 95%;
+		
+	}
 }
 
 @media (min-width:381px) and (max-width: 767px){
@@ -392,7 +436,10 @@ span.badge-orange:focus, span.badge-orange:hover{
 	  margin: -0.08rem;
   }
     /*col-md-1 iki 12 procentinis vaizdavimas*/
-
+    img.img-300{
+		width: 98%;
+		
+	}
 	.col-sm-3 {
 	  flex: 0 0 auto;
 	  width: 49.978%;
@@ -448,7 +495,7 @@ span.badge-orange:focus, span.badge-orange:hover{
 
   .col-md-2 {
     flex: 0 0 auto;
-    width: 16.68%;
+    width: 16.66%;
   }
 
   .col-md-3 {
