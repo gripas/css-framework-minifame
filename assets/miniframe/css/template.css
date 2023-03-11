@@ -53,7 +53,7 @@ html, body {
 }
 body { 
 	width: auto; 
-	height: 100vh;
+	height: 100%; /*100vh*/
 	line-height: 1.6;
 }
 /*Kursorius*/
@@ -144,10 +144,6 @@ section {
 }
 footer {
 	width: var(--width-section-footer);
-	
-}
-header, section, footer {
-	width: var(--width-section);
 	
 }
 .footer {
